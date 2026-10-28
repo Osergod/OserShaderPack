@@ -71,3 +71,14 @@ option.MOON_SET_B=Azul
 option.MOON_FIXED_R=Rojo
 option.MOON_FIXED_G=Verde
 option.MOON_FIXED_B=Azul
+
+# HALOS CELESTES
+
+screen.SUN_HALO=Halo del Sol
+screen.MOON_HALO=Halo de la Luna
+
+option.SUN_HALO_STRENGTH=Intensidad del halo
+option.SUN_HALO_SIZE=Extensión del halo
+
+option.MOON_HALO_STRENGTH=Intensidad del halo
+option.MOON_HALO_SIZE=Extensión del halo

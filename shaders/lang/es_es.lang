@@ -1,0 +1,11 @@
+screen.SOL=Sol
+screen.LUNA=Luna
+
+option.SUN_SIZE=Tamaño del Sol
+option.MOON_SIZE=Tamaño de la Luna
+
+option.SUN_ROTATION=Giro del Sol
+option.MOON_ROTATION=Giro de la Luna
+
+suffix.SUN_ROTATION=°
+suffix.MOON_ROTATION=°

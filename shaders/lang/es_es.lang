@@ -1,5 +1,9 @@
+# SUBMENUS PRINCIPALES
+
 screen.SOL=Sol
 screen.LUNA=Luna
+
+# OPCIONES GENERALES
 
 option.SUN_SIZE=Tamaño del Sol
 option.MOON_SIZE=Tamaño de la Luna
@@ -9,3 +13,61 @@ option.MOON_ROTATION=Giro de la Luna
 
 suffix.SUN_ROTATION=°
 suffix.MOON_ROTATION=°
+
+option.SUN_AUTO_COLOR=Color automático
+option.MOON_AUTO_COLOR=Color automático
+
+option.SUN_BRIGHTNESS=Brillo del Sol
+option.MOON_BRIGHTNESS=Brillo de la Luna
+
+# SUBMENUS DE COLORES DEL SOL
+
+screen.SUN_COLORS=Colores del Sol
+screen.SUN_DAWN=Amanecer
+screen.SUN_NOON=Mediodía
+screen.SUN_DUSK=Atardecer
+screen.SUN_FIXED=Color fijo
+
+# SUBMENUS DE COLORES DE LA LUNA
+
+screen.MOON_COLORS=Colores de la Luna
+screen.MOON_RISE=Salida de la Luna
+screen.MOON_NIGHT=Medianoche
+screen.MOON_SET=Puesta de la Luna
+screen.MOON_FIXED=Color fijo
+
+# COMPONENTES DEL SOL
+
+option.SUN_DAWN_R=Rojo
+option.SUN_DAWN_G=Verde
+option.SUN_DAWN_B=Azul
+
+option.SUN_NOON_R=Rojo
+option.SUN_NOON_G=Verde
+option.SUN_NOON_B=Azul
+
+option.SUN_DUSK_R=Rojo
+option.SUN_DUSK_G=Verde
+option.SUN_DUSK_B=Azul
+
+option.SUN_FIXED_R=Rojo
+option.SUN_FIXED_G=Verde
+option.SUN_FIXED_B=Azul
+
+# COMPONENTES DE LA LUNA
+
+option.MOON_RISE_R=Rojo
+option.MOON_RISE_G=Verde
+option.MOON_RISE_B=Azul
+
+option.MOON_NIGHT_R=Rojo
+option.MOON_NIGHT_G=Verde
+option.MOON_NIGHT_B=Azul
+
+option.MOON_SET_R=Rojo
+option.MOON_SET_G=Verde
+option.MOON_SET_B=Azul
+
+option.MOON_FIXED_R=Rojo
+option.MOON_FIXED_G=Verde
+option.MOON_FIXED_B=Azul

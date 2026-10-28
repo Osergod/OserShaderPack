@@ -7,6 +7,7 @@ varying vec2 lightcoord;
 
 varying vec4 vertexColor;
 varying vec3 worldNormal;
+varying vec3 playerPosition;
 
 void main() {
     gl_Position = ftransform();
@@ -21,8 +22,16 @@ void main() {
 
     vertexColor = gl_Color;
 
-    vec3 viewNormal = gl_NormalMatrix * gl_Normal;
+    vec3 viewNormal =
+        gl_NormalMatrix * gl_Normal;
 
     worldNormal =
         mat3(gbufferModelViewInverse) * viewNormal;
+
+    vec4 viewPosition =
+        gl_ModelViewMatrix * gl_Vertex;
+
+    playerPosition = (
+        gbufferModelViewInverse * viewPosition
+    ).xyz;
 }

@@ -127,3 +127,34 @@ screen.LIGHT_WEATHER=Fases lunares y lluvia
 option.LIGHT_MOON_PHASE=Iluminación según la fase lunar
 option.LIGHT_RAIN_DIMMING=Reducir luz directa con lluvia
 option.LIGHT_RAIN_REDUCTION=Reducción de luz por lluvia
+
+# ========================================
+# SOMBRAS
+# ========================================
+
+screen.SOMBRAS=Sombras
+
+option.SHADOWS_ENABLED=Sombras activadas
+
+option.shadowMapResolution=Resolución de las sombras
+option.shadowDistance=Distancia de las sombras
+
+suffix.shadowDistance= bloques
+
+option.SHADOW_SOFTENING=Suavizar los bordes
+option.SHADOW_SOFTNESS=Extensión del suavizado
+
+option.SHADOW_STRENGTH=Intensidad de las sombras
+
+# OBJETOS QUE PROYECTAN SOMBRAS
+
+screen.SHADOW_CASTERS=Objetos que proyectan sombras
+
+option.SHADOW_ENTITIES=Sombras de entidades
+option.SHADOW_BLOCK_ENTITIES=Sombras de bloques especiales
+
+# AJUSTES AVANZADOS
+
+screen.SHADOW_ADVANCED=Ajustes avanzados
+
+option.SHADOW_BIAS=Margen de profundidad

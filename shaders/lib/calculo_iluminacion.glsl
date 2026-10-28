@@ -71,7 +71,8 @@ float getDirectWeatherVisibility() {
 vec3 calculateWorldLighting(
     vec3 worldNormal,
     float skyExposure,
-    vec3 blockLighting
+    vec3 blockLighting,
+    vec2 directShadow
 ) {
     vec3 normal = normalize(worldNormal);
 
@@ -127,7 +128,8 @@ vec3 calculateWorldLighting(
         * sunFacing
         * sunVisibility
         * directExposure
-        * weatherVisibility;
+        * weatherVisibility
+        * directShadow.x;
 
     vec3 moonlight =
         getMoonLightColor()
@@ -136,7 +138,8 @@ vec3 calculateWorldLighting(
         * moonVisibility
         * directExposure
         * weatherVisibility
-        * getMoonLightPhase();
+        * getMoonLightPhase()
+        * directShadow.y;
 
     float ambientIntensity = mix(
         AMBIENT_NIGHT,

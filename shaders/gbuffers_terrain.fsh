@@ -1,6 +1,7 @@
 #version 120
 
 #include "/lib/calculo_iluminacion.glsl"
+#include "/lib/calculo_sombras.glsl"
 
 uniform sampler2D gtexture;
 uniform sampler2D lightmap;
@@ -12,6 +13,8 @@ varying vec2 lightcoord;
 
 varying vec4 vertexColor;
 varying vec3 worldNormal;
+
+varying vec3 playerPosition;
 
 /* DRAWBUFFERS:0 */
 
@@ -69,15 +72,38 @@ void main() {
         vec3(0.0)
     );
 
+        // Primera componente: visibilidad de la luz solar.
+    // Segunda componente: visibilidad de la luz lunar.
+    vec2 directShadow = vec2(1.0);
+
+#ifdef SHADOWS_ENABLED
+    float shadowVisibility = getShadowVisibility(
+        playerPosition,
+        worldNormal
+    );
+
+    float sunAlignment = dot(
+        normalize(shadowLightPosition),
+        normalize(sunPosition)
+    );
+
+    if (sunAlignment > 0.0) {
+        directShadow.x = shadowVisibility;
+    } else {
+        directShadow.y = shadowVisibility;
+    }
+#endif
+
     vec3 lighting = calculateWorldLighting(
         worldNormal,
         exposure.y,
-        blockLighting
+        blockLighting,
+        directShadow
     );
 
     vec3 linearSurface = toLinear(surface.rgb);
     vec3 litSurface = linearSurface * lighting;
 
-        vec4 finalColor = vec4(toDisplay(litSurface), surface.a);
+    vec4 finalColor = vec4(toDisplay(litSurface), surface.a);
     gl_FragData[0] = finalColor;
 }

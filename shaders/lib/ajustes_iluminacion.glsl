@@ -51,3 +51,9 @@
 #define LIGHT_RAIN_DIMMING // La lluvia reduce la intensidad de la iluminacion directa del Sol y la Luna
 
 #define LIGHT_RAIN_REDUCTION 0.65 // Reduccion de la luz directa con lluvia maxima. 0.0 no la reduce y 1.0 la elimina [0.0 0.1 0.2 0.35 0.5 0.65 0.8 0.9 1.0]
+
+// ========================================
+// CONTRASTE EN LAS ZONAS CON SOMBRA
+// ========================================
+
+#define SHADOW_INDIRECT_DARKENING 0.15 // Reduccion artistica de la luz indirecta del cielo en zonas con sombra. No reduce la luz ambiental minima ni la de antorchas [0.0 0.05 0.1 0.15 0.2 0.25 0.3]

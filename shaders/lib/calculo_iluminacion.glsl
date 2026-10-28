@@ -173,6 +173,28 @@ vec3 calculateWorldLighting(
         * skyIntensity
         * indirectExposure;
 
+        // Contraste adicional solo donde hay sombra
+    // de una luz que esta sobre el horizonte.
+    float solarOcclusion =
+        (1.0 - directShadow.x)
+        * sunVisibility;
+
+    float lunarOcclusion =
+        (1.0 - directShadow.y)
+        * moonVisibility
+        * getMoonLightPhase();
+
+    float shadowOcclusion = clamp(
+        max(solarOcclusion, lunarOcclusion),
+        0.0,
+        1.0
+    );
+
+    skylight *=
+        1.0
+        - SHADOW_INDIRECT_DARKENING
+        * shadowOcclusion;
+
     return ambient
         + skylight
         + sunlight

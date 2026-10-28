@@ -158,3 +158,5 @@ option.SHADOW_BLOCK_ENTITIES=Sombras de bloques especiales
 screen.SHADOW_ADVANCED=Ajustes avanzados
 
 option.SHADOW_BIAS=Margen de profundidad
+
+option.SHADOW_INDIRECT_DARKENING=Contraste adicional de las sombras

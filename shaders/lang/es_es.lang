@@ -82,3 +82,48 @@ option.SUN_HALO_SIZE=Extensión del halo
 
 option.MOON_HALO_STRENGTH=Intensidad del halo
 option.MOON_HALO_SIZE=Extensión del halo
+
+# ========================================
+# ILUMINACION
+# ========================================
+
+screen.ILUMINACION=Iluminación
+
+option.SUN_LIGHT_INTENSITY=Intensidad de la luz solar
+option.MOON_LIGHT_INTENSITY=Intensidad de la luz lunar
+
+# COLORES
+
+screen.LIGHT_COLORS=Colores de la iluminación
+
+option.LIGHT_FOLLOW_CELESTIAL_COLOR=Seguir el color de los astros
+option.LIGHT_COLOR_SATURATION=Saturación del color de la luz
+
+screen.SUN_LIGHT_COLOR=Color independiente de la luz solar
+screen.MOON_LIGHT_COLOR=Color independiente de la luz lunar
+
+option.SUN_LIGHT_R=Rojo
+option.SUN_LIGHT_G=Verde
+option.SUN_LIGHT_B=Azul
+
+option.MOON_LIGHT_R=Rojo
+option.MOON_LIGHT_G=Verde
+option.MOON_LIGHT_B=Azul
+
+# AMBIENTE
+
+screen.LIGHT_AMBIENT=Luz ambiental y del cielo
+
+option.AMBIENT_DAY=Luz ambiental diurna
+option.AMBIENT_NIGHT=Luz ambiental nocturna
+
+option.SKY_LIGHT_DAY=Luz indirecta del cielo diurno
+option.SKY_LIGHT_NIGHT=Luz indirecta del cielo nocturno
+
+# FASES Y LLUVIA
+
+screen.LIGHT_WEATHER=Fases lunares y lluvia
+
+option.LIGHT_MOON_PHASE=Iluminación según la fase lunar
+option.LIGHT_RAIN_DIMMING=Reducir luz directa con lluvia
+option.LIGHT_RAIN_REDUCTION=Reducción de luz por lluvia

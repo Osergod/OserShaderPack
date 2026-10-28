@@ -78,8 +78,6 @@ void main() {
     vec3 linearSurface = toLinear(surface.rgb);
     vec3 litSurface = linearSurface * lighting;
 
-    gl_FragData[0] = vec4(
-        toDisplay(litSurface),
-        surface.a
-    );
+        vec4 finalColor = vec4(toDisplay(litSurface), surface.a);
+    gl_FragData[0] = finalColor;
 }

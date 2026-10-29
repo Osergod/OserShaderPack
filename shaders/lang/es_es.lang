@@ -1,0 +1,162 @@
+# SUBMENUS PRINCIPALES
+
+screen.SOL=Sol
+screen.LUNA=Luna
+
+# OPCIONES GENERALES
+
+option.SUN_SIZE=Tamaño del Sol
+option.MOON_SIZE=Tamaño de la Luna
+
+option.SUN_ROTATION=Giro del Sol
+option.MOON_ROTATION=Giro de la Luna
+
+suffix.SUN_ROTATION=°
+suffix.MOON_ROTATION=°
+
+option.SUN_AUTO_COLOR=Color automático
+option.MOON_AUTO_COLOR=Color automático
+
+option.SUN_BRIGHTNESS=Brillo del Sol
+option.MOON_BRIGHTNESS=Brillo de la Luna
+
+# SUBMENUS DE COLORES DEL SOL
+
+screen.SUN_COLORS=Colores del Sol
+screen.SUN_DAWN=Amanecer
+screen.SUN_NOON=Mediodía
+screen.SUN_DUSK=Atardecer
+screen.SUN_FIXED=Color fijo
+
+# SUBMENUS DE COLORES DE LA LUNA
+
+screen.MOON_COLORS=Colores de la Luna
+screen.MOON_RISE=Salida de la Luna
+screen.MOON_NIGHT=Medianoche
+screen.MOON_SET=Puesta de la Luna
+screen.MOON_FIXED=Color fijo
+
+# COMPONENTES DEL SOL
+
+option.SUN_DAWN_R=Rojo
+option.SUN_DAWN_G=Verde
+option.SUN_DAWN_B=Azul
+
+option.SUN_NOON_R=Rojo
+option.SUN_NOON_G=Verde
+option.SUN_NOON_B=Azul
+
+option.SUN_DUSK_R=Rojo
+option.SUN_DUSK_G=Verde
+option.SUN_DUSK_B=Azul
+
+option.SUN_FIXED_R=Rojo
+option.SUN_FIXED_G=Verde
+option.SUN_FIXED_B=Azul
+
+# COMPONENTES DE LA LUNA
+
+option.MOON_RISE_R=Rojo
+option.MOON_RISE_G=Verde
+option.MOON_RISE_B=Azul
+
+option.MOON_NIGHT_R=Rojo
+option.MOON_NIGHT_G=Verde
+option.MOON_NIGHT_B=Azul
+
+option.MOON_SET_R=Rojo
+option.MOON_SET_G=Verde
+option.MOON_SET_B=Azul
+
+option.MOON_FIXED_R=Rojo
+option.MOON_FIXED_G=Verde
+option.MOON_FIXED_B=Azul
+
+# HALOS CELESTES
+
+screen.SUN_HALO=Halo del Sol
+screen.MOON_HALO=Halo de la Luna
+
+option.SUN_HALO_STRENGTH=Intensidad del halo
+option.SUN_HALO_SIZE=Extensión del halo
+
+option.MOON_HALO_STRENGTH=Intensidad del halo
+option.MOON_HALO_SIZE=Extensión del halo
+
+# ========================================
+# ILUMINACION
+# ========================================
+
+screen.ILUMINACION=Iluminación
+
+option.SUN_LIGHT_INTENSITY=Intensidad de la luz solar
+option.MOON_LIGHT_INTENSITY=Intensidad de la luz lunar
+
+# COLORES
+
+screen.LIGHT_COLORS=Colores de la iluminación
+
+option.LIGHT_FOLLOW_CELESTIAL_COLOR=Seguir el color de los astros
+option.LIGHT_COLOR_SATURATION=Saturación del color de la luz
+
+screen.SUN_LIGHT_COLOR=Color independiente de la luz solar
+screen.MOON_LIGHT_COLOR=Color independiente de la luz lunar
+
+option.SUN_LIGHT_R=Rojo
+option.SUN_LIGHT_G=Verde
+option.SUN_LIGHT_B=Azul
+
+option.MOON_LIGHT_R=Rojo
+option.MOON_LIGHT_G=Verde
+option.MOON_LIGHT_B=Azul
+
+# AMBIENTE
+
+screen.LIGHT_AMBIENT=Luz ambiental y del cielo
+
+option.AMBIENT_DAY=Luz ambiental diurna
+option.AMBIENT_NIGHT=Luz ambiental nocturna
+
+option.SKY_LIGHT_DAY=Luz indirecta del cielo diurno
+option.SKY_LIGHT_NIGHT=Luz indirecta del cielo nocturno
+
+# FASES Y LLUVIA
+
+screen.LIGHT_WEATHER=Fases lunares y lluvia
+
+option.LIGHT_MOON_PHASE=Iluminación según la fase lunar
+option.LIGHT_RAIN_DIMMING=Reducir luz directa con lluvia
+option.LIGHT_RAIN_REDUCTION=Reducción de luz por lluvia
+
+# ========================================
+# SOMBRAS
+# ========================================
+
+screen.SOMBRAS=Sombras
+
+option.SHADOWS_ENABLED=Sombras activadas
+
+option.shadowMapResolution=Resolución de las sombras
+option.shadowDistance=Distancia de las sombras
+
+suffix.shadowDistance= bloques
+
+option.SHADOW_SOFTENING=Suavizar los bordes
+option.SHADOW_SOFTNESS=Extensión del suavizado
+
+option.SHADOW_STRENGTH=Intensidad de las sombras
+
+# OBJETOS QUE PROYECTAN SOMBRAS
+
+screen.SHADOW_CASTERS=Objetos que proyectan sombras
+
+option.SHADOW_ENTITIES=Sombras de entidades
+option.SHADOW_BLOCK_ENTITIES=Sombras de bloques especiales
+
+# AJUSTES AVANZADOS
+
+screen.SHADOW_ADVANCED=Ajustes avanzados
+
+option.SHADOW_BIAS=Margen de profundidad
+
+option.SHADOW_INDIRECT_DARKENING=Contraste adicional de las sombras

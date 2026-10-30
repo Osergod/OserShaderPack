@@ -8,9 +8,9 @@
 // RESOLUCION Y DISTANCIA
 // ========================================
 
-const int shadowMapResolution = 1024; // Resolucion del mapa de sombras. Los valores altos aumentan el detalle y el consumo [512 1024 2048 4096]
+const int shadowMapResolution = 2048; // Resolucion del mapa de sombras. Los valores altos aumentan el detalle y el consumo [512 1024 2048 4096]
 
-const float shadowDistance = 64.0; // Distancia de referencia de las sombras alrededor del jugador, en bloques [32.0 48.0 64.0 80.0 96.0 128.0]
+const float shadowDistance = 48.0; // Distancia de referencia de las sombras alrededor del jugador, en bloques [32.0 48.0 64.0 80.0 96.0 128.0]
 
 // Limitar el terreno renderizado para el mapa de sombras.
 const float shadowDistanceRenderMul = 1.0;

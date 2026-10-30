@@ -1,9 +1,15 @@
-# SUBMENUS PRINCIPALES
+# ========================================
+# MENU PRINCIPAL
+# ========================================
 
 screen.SOL=Sol
 screen.LUNA=Luna
+screen.ILUMINACION=Iluminación
+screen.SOMBRAS=Sombras
 
-# OPCIONES GENERALES
+# ========================================
+# ASPECTO DEL SOL Y DE LA LUNA
+# ========================================
 
 option.SUN_SIZE=Tamaño del Sol
 option.MOON_SIZE=Tamaño de la Luna
@@ -11,32 +17,36 @@ option.MOON_SIZE=Tamaño de la Luna
 option.SUN_ROTATION=Giro del Sol
 option.MOON_ROTATION=Giro de la Luna
 
+option.SUN_BRIGHTNESS=Brillo visible del Sol
+option.MOON_BRIGHTNESS=Brillo visible de la Luna
+
+suffix.SUN_SIZE= x
+suffix.MOON_SIZE= x
+
 suffix.SUN_ROTATION=°
 suffix.MOON_ROTATION=°
 
-option.SUN_AUTO_COLOR=Color automático
-option.MOON_AUTO_COLOR=Color automático
+option.SUN_SIZE.comment=Escala respecto al tamaño original. 1.0 conserva las dimensiones base.
+option.MOON_SIZE.comment=Escala respecto al tamaño original. 1.0 conserva las dimensiones base.
 
-option.SUN_BRIGHTNESS=Brillo del Sol
-option.MOON_BRIGHTNESS=Brillo de la Luna
+option.SUN_ROTATION.comment=Gira el Sol sobre su centro. No modifica su trayectoria por el cielo.
+option.MOON_ROTATION.comment=Gira la Luna sobre su centro y conserva sus fases.
 
-# SUBMENUS DE COLORES DEL SOL
+option.SUN_BRIGHTNESS.comment=Modifica el brillo del astro y su halo, no la intensidad con la que ilumina el terreno.
+option.MOON_BRIGHTNESS.comment=Modifica el brillo del astro y su halo, no la intensidad con la que ilumina el terreno.
 
-screen.SUN_COLORS=Colores del Sol
+# ========================================
+# COLORES DEL SOL
+# ========================================
+
+screen.SUN_COLORS=Colores
 screen.SUN_DAWN=Amanecer
 screen.SUN_NOON=Mediodía
 screen.SUN_DUSK=Atardecer
 screen.SUN_FIXED=Color fijo
 
-# SUBMENUS DE COLORES DE LA LUNA
-
-screen.MOON_COLORS=Colores de la Luna
-screen.MOON_RISE=Salida de la Luna
-screen.MOON_NIGHT=Medianoche
-screen.MOON_SET=Puesta de la Luna
-screen.MOON_FIXED=Color fijo
-
-# COMPONENTES DEL SOL
+option.SUN_AUTO_COLOR=Color según la hora
+option.SUN_AUTO_COLOR.comment=Activado: mezcla los colores de amanecer, mediodía y atardecer. Desactivado: utiliza el color fijo.
 
 option.SUN_DAWN_R=Rojo
 option.SUN_DAWN_G=Verde
@@ -54,7 +64,18 @@ option.SUN_FIXED_R=Rojo
 option.SUN_FIXED_G=Verde
 option.SUN_FIXED_B=Azul
 
-# COMPONENTES DE LA LUNA
+# ========================================
+# COLORES DE LA LUNA
+# ========================================
+
+screen.MOON_COLORS=Colores
+screen.MOON_RISE=Salida
+screen.MOON_NIGHT=Medianoche
+screen.MOON_SET=Puesta
+screen.MOON_FIXED=Color fijo
+
+option.MOON_AUTO_COLOR=Color según la hora
+option.MOON_AUTO_COLOR.comment=Activado: mezcla los colores de salida, medianoche y puesta. Desactivado: utiliza el color fijo.
 
 option.MOON_RISE_R=Rojo
 option.MOON_RISE_G=Verde
@@ -72,10 +93,12 @@ option.MOON_FIXED_R=Rojo
 option.MOON_FIXED_G=Verde
 option.MOON_FIXED_B=Azul
 
-# HALOS CELESTES
+# ========================================
+# HALOS
+# ========================================
 
-screen.SUN_HALO=Halo del Sol
-screen.MOON_HALO=Halo de la Luna
+screen.SUN_HALO=Halo
+screen.MOON_HALO=Halo
 
 option.SUN_HALO_STRENGTH=Intensidad del halo
 option.SUN_HALO_SIZE=Extensión del halo
@@ -83,24 +106,36 @@ option.SUN_HALO_SIZE=Extensión del halo
 option.MOON_HALO_STRENGTH=Intensidad del halo
 option.MOON_HALO_SIZE=Extensión del halo
 
+option.SUN_HALO_STRENGTH.comment=Controla el resplandor añadido por el shader. 0.0 lo desactiva, pero no elimina el que pueda estar dibujado en la textura.
+option.MOON_HALO_STRENGTH.comment=Controla el resplandor añadido por el shader. También depende del brillo visible y de la fase lunar.
+
+option.SUN_HALO_SIZE.comment=Extensión relativa al tamaño del Sol. No cambia el tamaño del propio astro.
+option.MOON_HALO_SIZE.comment=Extensión relativa al tamaño de la Luna. No cambia el tamaño del propio astro.
+
 # ========================================
-# ILUMINACION
+# ILUMINACION DIRECTA
 # ========================================
 
-screen.ILUMINACION=Iluminación
+option.SUN_LIGHT_INTENSITY=Intensidad solar
+option.MOON_LIGHT_INTENSITY=Intensidad lunar
 
-option.SUN_LIGHT_INTENSITY=Intensidad de la luz solar
-option.MOON_LIGHT_INTENSITY=Intensidad de la luz lunar
+option.SUN_LIGHT_INTENSITY.comment=Intensidad de la luz directa del Sol sobre las superficies. No modifica el brillo visible del astro.
+option.MOON_LIGHT_INTENSITY.comment=Intensidad de la luz directa de la Luna sobre las superficies. No modifica el brillo visible del astro.
 
-# COLORES
+# ========================================
+# COLORES DE LA ILUMINACION
+# ========================================
 
-screen.LIGHT_COLORS=Colores de la iluminación
+screen.LIGHT_COLORS=Colores de la luz
 
-option.LIGHT_FOLLOW_CELESTIAL_COLOR=Seguir el color de los astros
-option.LIGHT_COLOR_SATURATION=Saturación del color de la luz
+option.LIGHT_FOLLOW_CELESTIAL_COLOR=Usar colores de los astros
+option.LIGHT_COLOR_SATURATION=Saturación de la luz
 
-screen.SUN_LIGHT_COLOR=Color independiente de la luz solar
-screen.MOON_LIGHT_COLOR=Color independiente de la luz lunar
+option.LIGHT_FOLLOW_CELESTIAL_COLOR.comment=Activado: utiliza los colores del Sol y la Luna. Desactivado: utiliza los colores independientes de iluminación.
+option.LIGHT_COLOR_SATURATION.comment=0.0 produce luz blanca. 1.0 conserva el color completo seleccionado.
+
+screen.SUN_LIGHT_COLOR=Color solar independiente
+screen.MOON_LIGHT_COLOR=Color lunar independiente
 
 option.SUN_LIGHT_R=Rojo
 option.SUN_LIGHT_G=Verde
@@ -110,53 +145,86 @@ option.MOON_LIGHT_R=Rojo
 option.MOON_LIGHT_G=Verde
 option.MOON_LIGHT_B=Azul
 
-# AMBIENTE
+# ========================================
+# LUZ AMBIENTAL Y DEL CIELO
+# ========================================
 
-screen.LIGHT_AMBIENT=Luz ambiental y del cielo
+screen.LIGHT_AMBIENT=Ambiente y cielo
 
-option.AMBIENT_DAY=Luz ambiental diurna
-option.AMBIENT_NIGHT=Luz ambiental nocturna
+option.AMBIENT_DAY=Ambiente de día
+option.AMBIENT_NIGHT=Ambiente de noche
 
-option.SKY_LIGHT_DAY=Luz indirecta del cielo diurno
-option.SKY_LIGHT_NIGHT=Luz indirecta del cielo nocturno
+option.SKY_LIGHT_DAY=Cielo de día
+option.SKY_LIGHT_NIGHT=Cielo de noche
 
-# FASES Y LLUVIA
+option.AMBIENT_DAY.comment=Claridad mínima durante el día, incluso sin exposición al cielo.
+option.AMBIENT_NIGHT.comment=Claridad mínima durante la noche, incluso sin exposición al cielo.
+
+option.SKY_LIGHT_DAY.comment=Luz indirecta del cielo durante el día. Su contribución depende de la exposición de la superficie al exterior.
+option.SKY_LIGHT_NIGHT.comment=Luz indirecta del cielo durante la noche. Su contribución depende de la exposición de la superficie al exterior.
+
+# ========================================
+# FASES LUNARES Y LLUVIA
+# ========================================
 
 screen.LIGHT_WEATHER=Fases lunares y lluvia
 
-option.LIGHT_MOON_PHASE=Iluminación según la fase lunar
-option.LIGHT_RAIN_DIMMING=Reducir luz directa con lluvia
-option.LIGHT_RAIN_REDUCTION=Reducción de luz por lluvia
+option.LIGHT_MOON_PHASE=Influencia de la fase lunar
+option.LIGHT_RAIN_DIMMING=Reducir luz con lluvia
+option.LIGHT_RAIN_REDUCTION=Reducción con lluvia máxima
+
+option.LIGHT_MOON_PHASE.comment=La fase lunar modifica la intensidad de su luz directa. No cambia la luz ambiental mínima.
+option.LIGHT_RAIN_DIMMING.comment=Permite que la lluvia reduzca la iluminación directa del Sol y de la Luna.
+option.LIGHT_RAIN_REDUCTION.comment=Fracción de luz directa que se elimina con lluvia máxima. Solo se aplica si la reducción por lluvia está activada.
 
 # ========================================
 # SOMBRAS
 # ========================================
 
-screen.SOMBRAS=Sombras
-
 option.SHADOWS_ENABLED=Sombras activadas
+option.SHADOWS_ENABLED.comment=Activa las sombras solares y lunares. No genera sombras desde antorchas ni otras luces locales.
 
-option.shadowMapResolution=Resolución de las sombras
+screen.SHADOW_QUALITY=Calidad y distancia
+screen.SHADOW_APPEARANCE=Apariencia
+screen.SHADOW_CASTERS=Objetos que proyectan sombra
+screen.SHADOW_ADVANCED=Ajustes avanzados
+
+# CALIDAD
+
+option.shadowMapResolution=Resolución del mapa
 option.shadowDistance=Distancia de las sombras
 
+suffix.shadowMapResolution= px
 suffix.shadowDistance= bloques
 
-option.SHADOW_SOFTENING=Suavizar los bordes
+option.shadowMapResolution.comment=Tamaño de cada lado del mapa de sombras. Aumentarlo mejora el detalle, pero consume más recursos.
+option.shadowDistance.comment=Distancia de referencia alrededor del jugador. Las sombras se desvanecen al acercarse al límite.
+
+# APARIENCIA
+
+option.SHADOW_SOFTENING=Suavizar bordes
 option.SHADOW_SOFTNESS=Extensión del suavizado
 
-option.SHADOW_STRENGTH=Intensidad de las sombras
+suffix.SHADOW_SOFTNESS= texeles
 
-# OBJETOS QUE PROYECTAN SOMBRAS
+option.SHADOW_STRENGTH=Bloqueo de luz directa
+option.SHADOW_INDIRECT_DARKENING=Contraste adicional
 
-screen.SHADOW_CASTERS=Objetos que proyectan sombras
+option.SHADOW_SOFTENING.comment=Suaviza los bordes utilizando varias comparaciones de profundidad.
+option.SHADOW_SOFTNESS.comment=Separación de las muestras del filtro, en texeles. Solo se aplica con el suavizado activado.
 
-option.SHADOW_ENTITIES=Sombras de entidades
-option.SHADOW_BLOCK_ENTITIES=Sombras de bloques especiales
+option.SHADOW_STRENGTH.comment=0.0 no bloquea luz directa. 1.0 aplica toda la sombra calculada. No reduce directamente la luz de antorchas.
+option.SHADOW_INDIRECT_DARKENING.comment=Reduce ligeramente la luz indirecta del cielo en zonas con sombra. No modifica la luz ambiental mínima ni la luz de antorchas.
+
+# OBJETOS
+
+option.SHADOW_ENTITIES=Entidades y criaturas
+option.SHADOW_BLOCK_ENTITIES=Bloques especiales
+
+option.SHADOW_ENTITIES.comment=Permite que las entidades proyecten sombras. No implica que todas reciban nuestra iluminación mediante un programa propio.
+option.SHADOW_BLOCK_ENTITIES.comment=Permite que elementos como los cofres participen en el mapa de sombras.
 
 # AJUSTES AVANZADOS
 
-screen.SHADOW_ADVANCED=Ajustes avanzados
-
 option.SHADOW_BIAS=Margen de profundidad
-
-option.SHADOW_INDIRECT_DARKENING=Contraste adicional de las sombras
+option.SHADOW_BIAS.comment=Ayuda a evitar manchas de autosombreado. Un valor excesivo puede separar las sombras de los objetos.

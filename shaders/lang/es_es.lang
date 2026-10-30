@@ -270,3 +270,53 @@ option.IMAGE_EXPOSURE.comment=Aclara u oscurece la imagen mediante pasos de expo
 
 option.IMAGE_BRIGHTNESS=Ajuste fino de brillo
 option.IMAGE_BRIGHTNESS.comment=Suma o resta una pequeña cantidad al color final. 0.0 es neutro. Los valores positivos pueden aclarar los negros y los negativos pueden eliminar detalle en sombras.
+
+# ========================================
+# EFECTOS DE LENTE
+# ========================================
+
+screen.LENTE=Efectos de lente
+
+# VINETA
+
+screen.LENS_VIGNETTE_MENU=Viñeta
+
+option.LENS_VIGNETTE=Viñeta activada
+option.LENS_VIGNETTE.comment=Oscurece suavemente los bordes. Es un efecto de imagen, no una sombra del mundo.
+
+option.LENS_VIGNETTE_STRENGTH=Intensidad
+option.LENS_VIGNETTE_STRENGTH.comment=Cantidad de oscurecimiento de los bordes.
+
+option.LENS_VIGNETTE_START=Inicio del efecto
+option.LENS_VIGNETTE_START.comment=Los valores altos concentran el efecto cerca de las esquinas. Los bajos lo extienden hacia el centro.
+
+# GRANO
+
+screen.LENS_GRAIN_MENU=Grano
+
+option.LENS_GRAIN=Grano activado
+option.LENS_GRAIN.comment=Añade un ruido monocromatico que cambia con cada fotograma.
+
+option.LENS_GRAIN_STRENGTH=Intensidad
+option.LENS_GRAIN_STRENGTH.comment=Controla la visibilidad del grano. Los valores altos pueden resultar molestos.
+
+# ABERRACION CROMATICA
+
+screen.LENS_CHROMATIC_MENU=Aberración cromática
+
+option.LENS_CHROMATIC=Aberración activada
+option.LENS_CHROMATIC.comment=Separa ligeramente rojo y azul hacia los bordes, manteniendo el verde en su posicion.
+
+option.LENS_CHROMATIC_STRENGTH=Separación de canales
+suffix.LENS_CHROMATIC_STRENGTH= px
+option.LENS_CHROMATIC_STRENGTH.comment=Desplazamiento maximo de cada canal respecto al verde, alcanzado en las esquinas.
+
+# ENFOQUE
+
+screen.LENS_SHARPENING_MENU=Enfoque
+
+option.LENS_SHARPENING=Enfoque activado
+option.LENS_SHARPENING.comment=Realza los detalles de la imagen. No es profundidad de campo ni desenfoque del fondo.
+
+option.LENS_SHARPENING_STRENGTH=Intensidad
+option.LENS_SHARPENING_STRENGTH.comment=Un valor moderado refuerza detalles. Los valores altos pueden crear halos y bordes artificiales.

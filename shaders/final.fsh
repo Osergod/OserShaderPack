@@ -5,6 +5,8 @@
 uniform sampler2D colortex0;
 
 varying vec2 texcoord;
+#include "/lib/efectos_lente.glsl"
+
 
 vec3 applyManualExposure(vec3 color) {
     // Con el valor neutro, conservar exactamente la entrada.
@@ -74,6 +76,8 @@ vec3 applyImageColor(vec3 color) {
 void main() {
     vec4 scene = texture2D(colortex0, texcoord);
 
+    scene.rgb = applyLensSampling(texcoord, scene.rgb);
+
     // Exposicion antes de la correccion de color.
     scene.rgb = applyManualExposure(scene.rgb);
 
@@ -88,5 +92,7 @@ void main() {
         1.0
     );
 
+    scene.rgb = applyLensFinish(texcoord, scene.rgb);
+    
     gl_FragColor = scene;
 }

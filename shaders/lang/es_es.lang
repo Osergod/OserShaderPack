@@ -228,3 +228,16 @@ option.SHADOW_BLOCK_ENTITIES.comment=Permite que elementos como los cofres parti
 
 option.SHADOW_BIAS=Margen de profundidad
 option.SHADOW_BIAS.comment=Ayuda a evitar manchas de autosombreado. Un valor excesivo puede separar las sombras de los objetos.
+
+# ========================================
+# PERFILES DE CALIDAD
+# ========================================
+
+profile.RENDIMIENTO=Rendimiento
+profile.RENDIMIENTO.comment=Sombras de terreno con menor resolución y distancia. Desactiva el suavizado y las sombras de entidades y bloques especiales.
+
+profile.EQUILIBRADO=Equilibrado
+profile.EQUILIBRADO.comment=Sombras a 2048 y 48 bloques, con suavizado y sombras de entidades y bloques especiales.
+
+profile.CALIDAD=Calidad
+profile.CALIDAD.comment=Sombras a 4096 y 64 bloques, con suavizado y sombras de entidades y bloques especiales. Mayor consumo de recursos.

@@ -259,3 +259,14 @@ option.IMAGE_CONTRAST.comment=1.0 conserva el contraste original. Los valores su
 
 option.IMAGE_WARMTH=Balance cálido y frío
 option.IMAGE_WARMTH.comment=Los valores negativos producen tonos mas frios y los positivos tonos mas calidos. 0.0 conserva el balance original.
+
+# ========================================
+# EXPOSICION Y BRILLO
+# ========================================
+
+option.IMAGE_EXPOSURE=Exposición manual
+suffix.IMAGE_EXPOSURE= EV
+option.IMAGE_EXPOSURE.comment=Aclara u oscurece la imagen mediante pasos de exposicion. 0.0 conserva la entrada. No modifica la intensidad de las fuentes de luz.
+
+option.IMAGE_BRIGHTNESS=Ajuste fino de brillo
+option.IMAGE_BRIGHTNESS.comment=Suma o resta una pequeña cantidad al color final. 0.0 es neutro. Los valores positivos pueden aclarar los negros y los negativos pueden eliminar detalle en sombras.

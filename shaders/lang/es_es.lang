@@ -241,3 +241,21 @@ profile.EQUILIBRADO.comment=Sombras a 2048 y 48 bloques, con suavizado y sombras
 
 profile.CALIDAD=Calidad
 profile.CALIDAD.comment=Sombras a 4096 y 64 bloques, con suavizado y sombras de entidades y bloques especiales. Mayor consumo de recursos.
+
+# ========================================
+# IMAGEN
+# ========================================
+
+screen.IMAGEN=Imagen
+
+option.IMAGE_COLOR_CORRECTION=Corrección de color
+option.IMAGE_COLOR_CORRECTION.comment=Activa los ajustes generales de color sobre la imagen final. No modifica los parametros de iluminacion del mundo.
+
+option.IMAGE_SATURATION=Saturación
+option.IMAGE_SATURATION.comment=Controla la intensidad de los colores. 0.0 muestra la imagen en gris y 1.0 conserva la saturacion original.
+
+option.IMAGE_CONTRAST=Contraste
+option.IMAGE_CONTRAST.comment=1.0 conserva el contraste original. Los valores superiores refuerzan la diferencia entre claros y oscuros.
+
+option.IMAGE_WARMTH=Balance cálido y frío
+option.IMAGE_WARMTH.comment=Los valores negativos producen tonos mas frios y los positivos tonos mas calidos. 0.0 conserva el balance original.

@@ -1,18 +1,34 @@
 #include "/lib/ajustes_cielo.glsl"
 
-uniform vec3 sunPosition;
-uniform vec3 upPosition;
-
+uniform mat4 gbufferModelView;
 uniform float sunAngle;
 
 vec3 calculateCustomSky(vec3 viewDirection) {
     vec3 direction = normalize(viewDirection);
-    vec3 up = normalize(upPosition);
-    vec3 sun = normalize(sunPosition);
+
+    // Vertical del mundo transformada con la camara actual.
+    vec3 up = normalize(
+        mat3(gbufferModelView) * vec3(0.0, 1.0, 0.0)
+    );
+
+    // Direccion solar calculada desde el ciclo celeste.
+    // Corresponde a la trayectoria sin inclinacion adicional
+    // que utiliza actualmente nuestro proyecto.
+    float solarAngle = sunAngle * 6.28318530718;
+
+    vec3 worldSunDirection = vec3(
+        cos(solarAngle),
+        sin(solarAngle),
+        0.0
+    );
+
+    vec3 sun = normalize(
+        mat3(gbufferModelView) * worldSunDirection
+    );
 
     float viewHeight = dot(direction, up);
     float sunHeight = dot(sun, up);
-
+    
     // Mezcla entre el cielo nocturno y el diurno.
     float dayAmount = smoothstep(
         -0.18,
@@ -163,7 +179,7 @@ vec3 calculateCustomSky(vec3 viewDirection) {
         towardsSun,
         SKY_DIRECTIONAL_CONTRAST
     );
-    
+
     vec3 twilightHorizon = mix(
         twilightBack,
         twilightFront,

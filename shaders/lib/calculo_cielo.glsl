@@ -150,6 +150,20 @@ vec3 calculateCustomSky(vec3 viewDirection) {
         1.0 / max(SKY_TWILIGHT_WIDTH, 0.05)
     );
 
+    // Suavizar la llegada a los extremos.
+    towardsSun = smoothstep(
+        0.0,
+        1.0,
+        towardsSun
+    );
+
+    // Reducir la diferencia entre las dos direcciones.
+    towardsSun = mix(
+        0.5,
+        towardsSun,
+        SKY_DIRECTIONAL_CONTRAST
+    );
+    
     vec3 twilightHorizon = mix(
         twilightBack,
         twilightFront,

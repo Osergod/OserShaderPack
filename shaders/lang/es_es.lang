@@ -408,3 +408,6 @@ option.SKY_DUSK_FRONT_B=Azul
 option.SKY_DUSK_BACK_R=Rojo
 option.SKY_DUSK_BACK_G=Verde
 option.SKY_DUSK_BACK_B=Azul
+
+option.SKY_DIRECTIONAL_CONTRAST=Contraste entre direcciones
+option.SKY_DIRECTIONAL_CONTRAST.comment=Reduce la diferencia entre los colores hacia el Sol y los del horizonte opuesto. Los valores bajos hacen mas discreto el cambio al girar la camara.

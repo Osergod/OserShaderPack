@@ -12,7 +12,8 @@
 
 #define SKY_TWILIGHT_INTENSITY 1.0 // Intensidad de los colores de amanecer y atardecer. 0.0 elimina esta transicion de color [0.0 0.25 0.5 0.75 1.0 1.25 1.5]
 
-#define SKY_TWILIGHT_WIDTH 0.6 // Amplitud de la zona calida alrededor de la direccion del Sol. Los valores altos la extienden [0.15 0.25 0.4 0.6 0.8 1.0 1.5 2.0]
+#define SKY_TWILIGHT_WIDTH 1.0 // Amplitud de la transicion de color alrededor del Sol. Los valores altos la extienden [0.15 0.25 0.4 0.6 0.8 1.0 1.5 2.0]
+#define SKY_DIRECTIONAL_CONTRAST 0.6 // Diferencia de color entre el horizonte hacia el Sol y el opuesto. 0.0 los iguala y 1.0 conserva toda la diferencia [0.0 0.2 0.4 0.6 0.8 1.0]
 
 // ========================================
 // DIA: PARTE SUPERIOR

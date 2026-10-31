@@ -320,3 +320,91 @@ option.LENS_SHARPENING.comment=Realza los detalles de la imagen. No es profundid
 
 option.LENS_SHARPENING_STRENGTH=Intensidad
 option.LENS_SHARPENING_STRENGTH.comment=Un valor moderado refuerza detalles. Los valores altos pueden crear halos y bordes artificiales.
+
+# ========================================
+# CIELO
+# ========================================
+
+screen.CIELO=Cielo
+
+option.SKY_CUSTOM=Cielo personalizado
+option.SKY_CUSTOM.comment=Activa los colores propios del shader y sustituye la superposicion original de amanecer y atardecer.
+
+option.SKY_BRIGHTNESS=Brillo del cielo
+option.SKY_BRIGHTNESS.comment=Multiplica el color del fondo celeste. No cambia la iluminacion del terreno ni el brillo propio de los astros.
+
+screen.SKY_DAY=Día
+screen.SKY_NIGHT=Noche
+screen.SKY_DAWN=Amanecer
+screen.SKY_DUSK=Atardecer
+screen.SKY_GRADIENT=Gradiente y transiciones
+
+option.SKY_HORIZON_HEIGHT=Extensión del horizonte
+option.SKY_HORIZON_HEIGHT.comment=Altura relativa hasta la que se extiende la mezcla entre el horizonte y la parte superior.
+
+option.SKY_GRADIENT_CURVE=Forma del gradiente
+option.SKY_GRADIENT_CURVE.comment=Los valores altos conservan el color del horizonte durante mas recorrido vertical.
+
+option.SKY_TWILIGHT_INTENSITY=Intensidad de la transición
+option.SKY_TWILIGHT_INTENSITY.comment=Intensidad de la paleta de amanecer y atardecer. 0.0 la desactiva.
+
+option.SKY_TWILIGHT_WIDTH=Amplitud de los tonos cálidos
+option.SKY_TWILIGHT_WIDTH.comment=Los valores altos extienden los tonos calidos alrededor de la direccion del Sol.
+
+# SUBMENUS DE COLOR
+
+screen.SKY_DAY_TOP=Parte superior
+screen.SKY_DAY_HORIZON=Horizonte
+
+screen.SKY_NIGHT_TOP=Parte superior
+screen.SKY_NIGHT_HORIZON=Horizonte
+
+screen.SKY_DAWN_TOP=Parte superior
+screen.SKY_DAWN_FRONT=Horizonte hacia el Sol
+screen.SKY_DAWN_BACK=Horizonte opuesto
+
+screen.SKY_DUSK_TOP=Parte superior
+screen.SKY_DUSK_FRONT=Horizonte hacia el Sol
+screen.SKY_DUSK_BACK=Horizonte opuesto
+
+# COMPONENTES RGB
+
+option.SKY_DAY_TOP_R=Rojo
+option.SKY_DAY_TOP_G=Verde
+option.SKY_DAY_TOP_B=Azul
+
+option.SKY_DAY_HORIZON_R=Rojo
+option.SKY_DAY_HORIZON_G=Verde
+option.SKY_DAY_HORIZON_B=Azul
+
+option.SKY_NIGHT_TOP_R=Rojo
+option.SKY_NIGHT_TOP_G=Verde
+option.SKY_NIGHT_TOP_B=Azul
+
+option.SKY_NIGHT_HORIZON_R=Rojo
+option.SKY_NIGHT_HORIZON_G=Verde
+option.SKY_NIGHT_HORIZON_B=Azul
+
+option.SKY_DAWN_TOP_R=Rojo
+option.SKY_DAWN_TOP_G=Verde
+option.SKY_DAWN_TOP_B=Azul
+
+option.SKY_DAWN_FRONT_R=Rojo
+option.SKY_DAWN_FRONT_G=Verde
+option.SKY_DAWN_FRONT_B=Azul
+
+option.SKY_DAWN_BACK_R=Rojo
+option.SKY_DAWN_BACK_G=Verde
+option.SKY_DAWN_BACK_B=Azul
+
+option.SKY_DUSK_TOP_R=Rojo
+option.SKY_DUSK_TOP_G=Verde
+option.SKY_DUSK_TOP_B=Azul
+
+option.SKY_DUSK_FRONT_R=Rojo
+option.SKY_DUSK_FRONT_G=Verde
+option.SKY_DUSK_FRONT_B=Azul
+
+option.SKY_DUSK_BACK_R=Rojo
+option.SKY_DUSK_BACK_G=Verde
+option.SKY_DUSK_BACK_B=Azul
